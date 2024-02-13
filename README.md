@@ -1,4 +1,4 @@
-﻿# Youtube_Pipeline
+#YOUTUBE TRANDS PIPELINE
 
 Pipeline Descritiva
 
@@ -19,6 +19,8 @@ Caminho da Pipeline:
 4. Configurar uma função Lambda para ser acionada ao detectar um novo evento no S3.
 5. Quando um novo arquivo é detectado no bucket do S3, a função Lambda é acionada para enviar o arquivo para o Data Warehouse (DW) no Amazon RDS.
 
+![FLUXOGRAMA](https://ibb.co/g7xPkVD)
+
 [Dados]
 Campos obtidos da Youtube API:
 - Id do vídeo
@@ -29,6 +31,18 @@ Campos obtidos da Youtube API:
 - Contagem de compartilhamentos
 - Data e hora de publicação
 - Tags
+``` javascript
+{
+  "video_id": "string",
+  "title": "string",
+  "duration": "string",
+  "channel_id": "string",
+  "likes": integer,
+  "shares": integer,
+  "tags": ["string"],
+  "published_at": "string"
+}
+```
 
 [Data Warehouse Final]
 [Dados Armazenados no DW]
