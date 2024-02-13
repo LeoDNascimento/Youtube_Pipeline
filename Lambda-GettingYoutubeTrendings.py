@@ -40,10 +40,9 @@ def get_trending_videos():
         duration = video['contentDetails']['duration']
         channel_id = video['snippet']['channelId']
         likes = video['statistics']['likeCount']
-        # dislikes = video['statistics']['dislikeCount']
         shares = video['statistics'].get('shareCount', 0)
         published_at = datetime.strptime(video['snippet']['publishedAt'], "%Y-%m-%dT%H:%M:%SZ").strftime("%Y-%m-%d %H:%M:%S")
-        # tags = [normalize_text(tag) for tag in video['snippet'].get('tags', [])]
+        tags = [normalize_text(tag) for tag in video['snippet'].get('tags', [])]
 
         video_data = {
             'video_id': video_id,
