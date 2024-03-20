@@ -1,4 +1,4 @@
-## YOUTUBE TRANDS PIPELINE
+## YOUTUBE TRENDS PIPELINE
 
 Pipeline Descritiva
 
